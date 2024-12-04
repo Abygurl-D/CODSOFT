@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: #f5f5f5;
+    box-shadow: 0px 2px px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 2em;
+    color: #555;
+    cursor: default;
+}
+
+.logo span {
+    color: #E67A7B;
+}
+
+.navigation {
+    margin-left: -30px;
+    display: flex;
+}
+
+.navigation a {
+    font-size: 1em;
+    color: #555;
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.navigation a:hover {
+    color: #E67A7B;
+}
+
+.btn-talk {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 20px;
+    background: #E67A7B;
+    border-radius: 5px;
+    border: 2px solid #E67A7B;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-talk:hover {
+    color: #E67A7B;
+    background: transparent;
+    border: 2px solid #E67A7B;
+}
+
+/* .home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('hero.bg.JPG');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+.content {
+    max-width: 500px;
+    color: #555;
+} */
+
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+    background-color: #f5f5f5; /* Light background for contrast */
+}
+
+.content {
+    max-width: 50%;
+}
+
+.hero-image {
+    width: 300px; /* Adjust size as needed */
+    height: 300px; /* Keep it circular */
+    border-radius: 50%;
+    border: 5px solid #E67A7B; /* Theme color border */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    object-fit: cover; /* Ensure image looks good within the circle */
+}
+
+
+.content h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.content h2 span {
+    color: #E67A7B;
+}
+
+.content h4 {
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.content p {
+    margin-bottom: 30px;
+    padding: 10px 0 40px 0;
+}
+
+.btn-group a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #E67A7B;
+    border-radius: 5px;
+    border: 2px solid #E67A7B;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-group a:hover:nth-child(1) {
+    color: #E67A7B;
+    background: transparent;
+}
+
+.btn-group a:nth-child(2) {
+    color: #E67A7B;
+    background: transparent;
+    margin-left: 30px;
+    padding: 10px 30px;
+}
+
+.btn-group a:hover:nth-child(2) {
+    color: #fff;
+    background: #E67A7B;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 50px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #E67A7B;
+    border-radius: 50%;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #fff;
+    outline: 2px solid #E67A7B;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+
+.social-icons a i {
+    color: #fff;
+}
+
+.about {
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #E67A7B;
+}
+
+.about p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.about-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-item {
+    flex: 1 1 300px;
+    text-align: left;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-item h3 {
+    color: #E67A7B;
+    margin-bottom: 10px;
+}
+
+.about-item ul {
+    list-style: none;
+}
+
+.about-item li {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        padding: 30px 10px;
+    }
+
+    .content h2 {
+        font-size: 1.8em;
+    }
+
+    .content h4 {
+        font-size: 1em;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-details {
+        flex-direction: column;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
