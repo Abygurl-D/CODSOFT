@@ -15,79 +15,225 @@
     <header>
         <h2 class="logo"><span>A</span>bby D.</h2>
         <nav class="navigation">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#resume">Resume</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <div class="nav-links"> <!-- Edit 2: Wrap links in a div for toggling -->
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="documents/Resume.pdf" download>Resume</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+            </div>
         </nav>
         <a href="#contact" class="btn-talk">Get In Touch</a>
     </header>
 
     <!-- Home Section -->
     <section class="home" id="home">
-        <img class="hero-image" src="hero.bg.JPG" alt="Abigail Debrah">
+        <div class="hero-images-container">
+            <div class="images-overlay"></div>
+            <img class="hero-images" src="./images/me1.jpg" alt="Abigail Debrah">
+        </div>
         <div class="content">
             <h2>Hi, I'm <span>Abigail Debrah</span></h2>
             <h4>Junior Frontend Developer</h4>
-            <p>"I specialize in creating intuitive, responsive, and user-focused web experiences. Let’s build something great together!".</p>
+            <p>"I specialize in creating intuitive, responsive, and user-focused web experiences. Let’s build something
+                great together!".</p>
             <div class="btn-group">
-                <a href="#contact">Hire Me</a>
+                <a href="documents/resume.pdf" download>Hire Me</a>
                 <a href="#projects">See Projects</a>
             </div>
             <div class="social-icons">
                 <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands  fa-github"></i></a>
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
             </div>
         </div>
+
     </section>
 
     <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
-            <h2>About Me</h2>
-            <p>Hello! I'm Abigail Debrah, a passionate Junior Frontend Developer with a background in Theatre Arts and Archaeology. My journey into web development has been an exciting adventure filled with creativity, problem-solving, and continuous learning. I take pride in crafting clean, efficient, and visually appealing interfaces that provide great user experiences.</p>
-            <p>When I'm not coding, you can find me exploring the arts, learning new skills, or diving into my love for archaeology. I'm dedicated to growing as a developer and collaborating on meaningful projects that make a difference.</p>
-            <div class="about-details">
-                <div class="about-item">
-                    <h3>Education</h3>
-                    <p>University of Ghana, Degree in Theatre Arts and Archaeology</p>
+            <h2>Who I Am</h2>
+            <img class="about-image" src="hero.bg.JPG" alt="Abigail Debrah">
+            <p>Hello! I'm Abby, a passionate Junior Frontend Developer. My journey into web development has been an
+                exciting adventure filled with creativity, problem-solving, and continuous learning. I take pride in
+                crafting clean, efficient, and visually appealing interfaces that provide great user experiences.</p>
+            <p>When I'm not coding, you can find me exploring the arts, learning new skills, or diving into my love for
+                archaeology. I'm dedicated to growing as a developer and collaborating on meaningful projects that make
+                a difference.</p>
+
+            <div>
+                <h2>What I Do</h2>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <h3>Web Development</h3>
+                    <p>I craft responsive, mobile-friendly websites using modern technologies, ensuring functionality
+                        across devices.</p>
                 </div>
-                <div class="about-item">
-                    <h3>Skills</h3>
-                    <ul>
-                        <li>React</li>
-                        <li>JavaScript</li>
-                        <li>CSS & Tailwind CSS</li>
-                        <li>Material UI</li>
-                    </ul>
+                <div class="card">
+                    <h3>UI/UX Implementation</h3>
+                    <p>I translate designs into intuitive user interfaces, focusing on user experience and
+                        accessibility.</p>
+                </div>
+                <div class="card">
+                    <h3>API Integration</h3>
+                    <p>I integrate front-end applications with APIs, enabling dynamic content and real-time updates.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Placeholder Sections -->
-    <section id="resume">
-        <h2>Resume</h2>
-        <p>Details about your resume go here.</p>
+    <!-- SKILLS -->
+
+    <section class="skills-section">
+        <h2>What I Use</h2>
+        <p>These are the powerful tools and technologies I employ to craft exceptional digital experiences. From cutting-edge programming languages to robust libraries and frameworks, this collection represents my proficiency in harnessing the latest technological advancements</p>
+        <div class="card-deck">
+            <div class="card card-html">
+                <img src="./images/html.png" alt="HTML">
+                <h3>HTML</h3>
+            </div>
+            <div class="card card-css">
+                <img src="./images/css.png" alt="CSS">
+                <h3>CSS</h3>
+            </div>
+            <div class="card card-javascript">
+                <img src="./images/JavaScript.png" alt="JavaScript">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="card card-react">
+                <img src="./images/react.png" alt="React">
+                <h3>React</h3>
+            </div>
+            <div class="card card-tailwind">
+                <img src="./images/tailwind.png" alt="Tailwind CSS">
+                <h3>Tailwind CSS</h3>
+            </div>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Details about your projects go here.</p>
+     <!-- PROJECTS -->
+     <section class="project-section">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-container">
+              <!-- Project Card 1 -->
+              <div class="project-card">
+                <img src="./images/freelix3.png" alt="Project 1" class="project-image" />
+                <div class="project-content">
+                  <h3 class="project-title">Project 1</h3>
+                  <p class="project-description">
+                    A brief description of the first project goes here. It highlights key features and tools used.
+                  </p>
+                  <a href="https://freelix24.netlify.app/" class="see-more-btn">See More</a>
+                </div>
+              </div>
+              <!-- Repeat for additional projects -->
+              <div class="project-card">
+                <img src="./images/fusionXpress.png" alt="Project 2" class="project-image" />
+                <div class="project-content">
+                  <h3 class="project-title">Project 2</h3>
+                  <p class="project-description">
+                    A brief description of the second project goes here. It highlights key features and tools used.
+                  </p>
+                  <a href="https://fusionxpress.netlify.app/" class="see-more-btn">See More</a>
+                </div>
+              </div>
+              <div class="project-card">
+                <img src="./images/kiddy.png" alt="Project 3" class="project-image" />
+                <div class="project-content">
+                  <h3 class="project-title">Project 3</h3>
+                  <p class="project-description">
+                    A brief description of the third project goes here. It highlights key features and tools used.
+                  </p>
+                  <a href="https://kiddyground.netlify.app/" class="see-more-btn">See More</a>
+                </div>
+              </div>
+              <div class="project-card">
+                <img src="./images/hair.png" alt="Project 4" class="project-image" />
+                <div class="project-content">
+                  <h3 class="project-title">Project 4</h3>
+                  <p class="project-description">
+                    A brief description of the fourth project goes here. It highlights key features and tools used.
+                  </p>
+                  <a href="https://abygurl-d.github.io/The-hair-Project/" class="see-more-btn">See More</a>
+                </div>
+              </div>
+              <div class="project-card">
+                <img src="./images/portfolio1.png" alt="Project 5" class="project-image" />
+                <div class="project-content">
+                  <h3 class="project-title">Project 5</h3>
+                  <p class="project-description">
+                    A brief description of the fifth project goes here. It highlights key features and tools used.
+                  </p>
+                  <a href="https://abygurl-d.github.io/Abby-s-Portfolio/" class="see-more-btn">See More</a>
+                </div>
+              </div>
+              <div class="project-card">
+                <img src="./images/portfolio1.png" alt="Project 5" class="project-image" />
+                <div class="project-content">
+                  <h3 class="project-title">Project 5</h3>
+                  <p class="project-description">
+                    A brief description of the fifth project goes here. It highlights key features and tools used.
+                  </p>
+                  <a href="https://abygurl-d.github.io/Abby-s-Portfolio/" class="see-more-btn">See More</a>
+                </div>
+              </div>
+            </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>Details about your skills go here.</p>
+    <!-- CONTACT -->
+    <section class="section-contact" aria-label="contact">
+        <div class="container">
+            <div class="contact-card">
+
+                <div class="contact-content" data-reveal="left">
+                    <div class="card-icon">
+                        <img src="./images/email.png" width="44" height="44" loading="lazy" alt="envelop icon">
+                    </div>
+                    <h2 class="h2-section-title">If you like what you see, let's work together.</h2>
+                    <p class="section-text">
+                        I bring rapid solutions to make the life of my clients easier. Have any questions? Reach out to
+                        me from
+                        this contact form and I will get back to you shortly.
+                    </p>
+                </div>
+
+                <form action="" class="contact-form" data-reveal="right">
+                    <div class="input-wrapper">
+                        <input type="text" name="name" placeholder="Name *" required class="input-field">
+                        <input type="email" name="email_address" placeholder="Email *" required class="input-field">
+                    </div>
+                    <textarea name="message" placeholder="Message *" required class="input-field"></textarea>
+                    <button type="submit" class="btnc">Send message</button>
+                </form>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Details about how to contact you go here.</p>
-    </section>
+     <!-- - #FOOTER -->
 
+     <footer class="footer">
+    
+        <p class="copyright">
+          Copyright ©2024 All rights reserved | Made with
+          <i class="fa-solid fa-heart"></i> by Ab.Debrah
+        </p>
+            <div class="footer-socials">
+                <a href="/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="/"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+</footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active'); // Toggle the active class
+        }
+    </script>
 </body>
 
 </html>
