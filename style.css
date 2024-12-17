@@ -75,7 +75,7 @@ header {
     text-decoration: none;
     padding: 8px 20px;
     background: #00BFA6;
-    border-radius: 5px;
+    border-radius: 5px;border-radius:1em 0 1em 0;
     border: 2px solid #00BFA6;
     font-weight: 500;
     transition: 0.3s;
@@ -158,7 +158,7 @@ header {
     text-decoration: none;
     padding: 10px 20px;
     background: #00BFA6;
-    border-radius: 5px;
+    border-radius:1em 0 1em 0;
     border: 2px solid #00BFA6;
     font-weight: 500;
     transition: 0.3s;
@@ -697,7 +697,7 @@ html {
     background-color: #00BFA6;
     color: whitesmoke;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius:1em 0 1em 0;
     font-size: 1rem;
     font-weight: bold;
     transition: background-color 0.3s ease;
@@ -828,7 +828,7 @@ html {
   font-weight: bold;
   text-transform: uppercase;
   border: none;
-  border-radius: 5px;
+  border-radius:1em 0 1em 0;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
